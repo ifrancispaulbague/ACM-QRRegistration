@@ -12,7 +12,7 @@ public class DB {
     public static Connection connect() throws Exception{
         Connection conn = null;
         String url;
-        Statement stmt;
+        PreparedStatement ps;
         ResultSet rs;
         try {
             Class.forName("org.sqlite.JDBC");
