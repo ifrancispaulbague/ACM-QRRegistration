@@ -53,7 +53,6 @@ public class DB {
            }
         } catch (SQLException ex) {
             ex.printStackTrace();
-        } finally {
         }
         return name;
     }
