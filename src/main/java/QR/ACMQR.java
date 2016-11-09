@@ -106,7 +106,6 @@ public class ACMQR extends JFrame implements Runnable, ThreadFactory {
                         JOptionPane.showMessageDialog(null, "Error: \""+result.getText()+"\" not in database.");
                         ex.printStackTrace();
                     }
-                    //JOptionPane.showMessageDialog(null, result.getText());
                 }
             }
         } while (true);
