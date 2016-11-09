@@ -95,6 +95,8 @@ public class ACMQR extends JFrame implements Runnable, ThreadFactory {
                 try {
                     result = new MultiFormatReader().decode(bitmap);
                 } catch (NotFoundException e) { //no qr code found
+                    JOptionPane.showMessageDialog(null, "Error: No QR code in image.");
+                    e.printStackTrace();
                 }
                 
                 if (result != null) {
