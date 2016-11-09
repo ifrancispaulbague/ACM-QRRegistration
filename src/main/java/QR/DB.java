@@ -46,8 +46,8 @@ public class DB {
         try {
            conn = connect();
            String query = "select name from members where uid="+uid;
-           Statement st = conn.createStatement();
-           ResultSet res = st.executeQuery(query);
+           PreparedStatement ps = conn.prepareStatement();
+           ResultSet res = ps.executeQuery(query);
            while(res.next()){
         	   name = res.getString("name");
            }
